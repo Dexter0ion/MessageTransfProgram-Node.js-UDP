@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Ssocket</title>
+    <script type="text/javascript" src="http://localhost:8080/socket.io/socket.io.js"></script>
+    <script src="encoding-indexes.js"></script>
+    <script src="encoding.js"></script>
+    <link rel="stylesheet" href="css/styleClient.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <a class="navbar-brand" href="#">UDP-Client</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Mainpage <span class="sr-only">(current)</span></a></li>
+                    <li><a href="about.html">About</a></li>
+                    
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <div class="panel panel-default">
+        <div class="panel-heading">chatBoard</div>
+        <div id="chatBoard" class="panel-body">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label">Input Message</label>
+        <div class="input-group">
+            <span class="input-group-addon">$</span>
+            <input type="text" class="form-control" id="tbxChatMsg">
+            <span class="input-group-btn">
+      <button class="btn btn-default" type="button" id="btnConnectStart">Send</button>
+      
+    </span>
+    
+        </div>
+    </div>
+    <a href="#" class="btn btn-default btn-lg btn-block" >ConnectStart</a>
+    <div class="progress progress-striped">
+  <div class="progress-bar progress-bar-info" style="width: 20%"></div>
+</div>
+    <div class="jumbotron">
+        <h1>NODEJS UDP MESSAGE PROGRAM</h1>
+        <p>
+            This web program based on nodejs & udp，click button to view code on Github
+        </p>
+        <p><a class="btn btn-primary btn-lg">Github</a></p>
+    </div>
+    <script src="js/clientSocket.js"></script>
+</body>
+
+</html>
